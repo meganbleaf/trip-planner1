@@ -1,4 +1,5 @@
 console.log("I'm in the index.js file!")
+const markerFunction = require("./markerFunction")
 
 const mapboxgl = require("mapbox-gl");
 
@@ -18,4 +19,4 @@ markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
 new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
 
-
+new mapboxgl.markerFunction(activity, arrayLongLat)
